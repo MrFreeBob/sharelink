@@ -26,16 +26,16 @@
 3.安装 PHP
 ====
 
-**使用 yum 安装 PHP：**
+#### 使用 yum 安装 PHP：
     yum install php php-fpm php-mysql -y
 
-**安装之后，启动 PHP-FPM 进程：**
+#### 安装之后，启动 PHP-FPM 进程：
     service php-fpm start
 
-**启动之后，可以使用下面的命令查看 PHP-FPM 进程监听哪个端口 ：**
+#### 启动之后，可以使用下面的命令查看 PHP-FPM 进程监听哪个端口 ：
     netstat -nlpt | grep php-fpm
 
-**把 PHP-FPM 也设置成开机自动启动：**
+#### 把 PHP-FPM 也设置成开机自动启动：
     chkconfig php-fpm on
 
 
