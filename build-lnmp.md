@@ -61,7 +61,7 @@ CentOS 6 没有Discuz 的 yum 源，所以我们需要下载一个Discuz 压缩�
 
     chmod -R 777 /var/www/html
 
-**重启 Apache**
+#### 重启 Apache
 
     service httpd restart
     
