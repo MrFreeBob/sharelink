@@ -1,6 +1,6 @@
 1.使用 yum 安装 MySQL：
 ====
-  yum install mysql-server -y
+    yum install mysql-server -y
 
 安装完成后，启动 MySQL 服务：
     service mysqld restart
@@ -13,7 +13,8 @@
 将 MySQL 设置为开机自动启动：
     chkconfig mysqld on
 
-#### 2.安装 Apache 组件
+2.安装 Apache 组件
+====
     yum install httpd -y
 
 安装之后，启动 httpd 进程
@@ -22,7 +23,8 @@
 把 httpd 也设置成开机自动启动：
     chkconfig httpd on
 
-#### 3.安装 PHP
+3.安装 PHP
+====
 
 **使用 yum 安装 PHP：**
     yum install php php-fpm php-mysql -y
@@ -37,7 +39,8 @@
     chkconfig php-fpm on
 
 
-### 3.安装并配置 Discuz
+4.安装 Discuz
+====
 
 CentOS 6 没有Discuz 的 yum 源，所以我们需要下载一个Discuz 压缩包：
 
@@ -47,7 +50,8 @@ CentOS 6 没有Discuz 的 yum 源，所以我们需要下载一个Discuz 压缩�
 
     unzip Discuz_X3.2_SC_UTF8.zip
 
-#### 4.配置 Discuz
+5.配置 Discuz
+====
 
 由于PHP默认访问 /var/www/html/ 文件夹，所以我们需要把upload文件夹里的文件都复制到 /var/www/html/ 文件夹
 
